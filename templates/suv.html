@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}SUVs{% endblock title %}
+{% block body %}
+<div class="container my-4 px-3">
+    <h1 class="text-center mb-3">Available SUVs</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="/static/bmw_suv.jfif" class="d-block w-100" alt="...">
+
+                <div class="card-body">
+                    <p class="card-text text-center">BMW</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="/static/mercedes_suv.jfif" class="d-block w-100" alt="...">
+
+                <div class="card-body">
+                    <p class="card-text text-center">Mercedes</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="/static/suvthumbnail.jfif" class="d-block w-100" alt="...">
+
+                <div class="card-body">
+                    <p class="card-text text-center">Toyota</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock body %}

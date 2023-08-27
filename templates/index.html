@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block style %}
+#bod{
+font-family: 'Dancing Script', cursive;
+margin-top: 2em;
+font-size: 2.5em;
+}
+#services{
+font-family: 'Poppins', sans-serif;
+font-size: 0.43em;
+margin-top: 2em;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.col{
+margin: 1em;
+}
+{% endblock style %}
+
+{% block body %}
+<div class="container-fluid px-0">
+  <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="6000">
+        <img src="/static/1a.jfif" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="6000">
+        <img src="/static/2a.jfif" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="6000">
+        <img src="/static/3.jfif" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="6000">
+        <img src="/static/4c.jfif" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> 
+</div>
+
+<div id="bod" class="container my-4">
+  {% comment %} <p>{% for key, value in context.items %}
+    <li>{{ key }}: {{ value }}</li>
+    {% endfor %}</p> {% endcomment %}
+  <h1 class="my-3 text-center">WELCOME TO LUXURY CARS!</h1>
+  <h2 class="my-3 text-center">Explore our excellent range of Cars and take home your dream car.</h2>
+  <div id="services" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/bmwthumbnail.jfif" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <p class="card-text text-center">Sedans.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="/sedan"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/renault.jfif" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <p class="card-text text-center">Hatchbacks</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="/hatchback"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/suvthumbnail.jfif" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <p class="card-text text-center">Top-class SUVs.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="/suv"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/buggatithumbnail.jfif" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <p class="card-text text-center">Supercars </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="/supercar"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock body %}
